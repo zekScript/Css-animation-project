@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00072d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.divider{
+    padding-top: 15px;
+}
+
+input{
+    border-radius: 3px;
+    width: 15rem;
+    border: none;
+    border-bottom: yellow 2px solid;
+    background-color: transparent;
+    width: 350px;
+    height: 30px;
+    font-size: medium;
+    color: white;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #26236b;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4a45c2;
+    box-shadow: 0 0 23px 10px #4a45c2;
+}
+
+button:active{
+    background-color: #5550c6;
+    animation: buttonAnimation 0.5s ease-in-out 2 alternate;
+    /* transform: scale(0.9);
+    transition: 0.15s linear; */
+}
+
+/* Animations down here! */
+
+@keyframes buttonAnimation {
+    0%{
+    transform: scale(1);
+    }
+    25%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    75%{
+        transform: scale(0.7);
+    }
+    100%{
+    
+    transform: scale(0.6);
+    }
+}
